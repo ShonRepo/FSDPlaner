@@ -4,5 +4,5 @@ class ProjectSerializer < ActiveModel::Serializer
 end
 
 class TodoSerializer < ActiveModel::Serializer
-  attributes :text, :isCompleted
+  attributes :id, :text, :isCompleted
 end

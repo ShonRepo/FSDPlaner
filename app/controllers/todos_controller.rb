@@ -5,17 +5,17 @@ class TodosController < ApplicationController
     @Todo = @Project.todos.find(params[:id])
     @Todo[:isCompleted] = !@Todo[:isCompleted]
     if @Todo.save
-
+      render json: @Todo
     else
       render json: {message: 'error'}
     end
   end
 
   def create
-    if(params[:project_id] == 0)
+
+    if !params[:project_id]
       @Project = Project.create(project_params)
       if @Project.save
-        render @Project
       else
         render json: {message: 'error create project'}
       end
@@ -25,8 +25,9 @@ class TodosController < ApplicationController
     end
 
     @Todo = @Project.todos.create(todo_params)
+    @Todo[:isCompleted] = false
     if @Todo.save
-      render @todo
+      render json: @todo
     else
       render json: {message: 'error create project'}
     end
@@ -40,10 +41,10 @@ class TodosController < ApplicationController
   end
 
   def todo_params
-    params.require(:todo).permit(:text,:isCompleted)
+    params.permit(:text)
   end
   def project_params
-    params.require(:project).permit(:title)
+    params.permit(:title)
 
   end
 end

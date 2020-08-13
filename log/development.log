@@ -2654,3 +2654,357 @@ Processing by TodosController#create as */*
 Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 2.9ms | Allocations: 7537)
 
 
+Started GET "/" for ::1 at 2020-08-12 14:58:10 +0300
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ivan/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ivan/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.0ms | Allocations: 295)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 1537)
+
+
+Started GET "/" for ::1 at 2020-08-12 14:58:12 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ivan/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ivan/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 17.6ms | Allocations: 183)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms | Allocations: 720)
+
+
+Started GET "/" for ::1 at 2020-08-12 14:58:13 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ivan/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ivan/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.3ms | Allocations: 7)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 238)
+
+
+Started GET "/projects" for ::1 at 2020-08-12 14:58:13 +0300
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (6.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 10]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 11]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 12]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 13]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 14]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 15]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 16]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (62.43ms)
+Completed 200 OK in 94ms (Views: 66.0ms | ActiveRecord: 21.4ms | Allocations: 25517)
+
+
+Started GET "/" for ::1 at 2020-08-12 17:38:50 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ivan/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ivan/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.3ms | Allocations: 8)
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 241)
+
+
+Started GET "/" for ::1 at 2020-08-12 17:38:53 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ivan/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ivan/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.4ms | Allocations: 8)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 240)
+
+
+Started GET "/12" for ::1 at 2020-08-12 17:38:54 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/12"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+rack (2.2.3) lib/rack/handler/webrick.rb:95:in `service'
+/Users/ivan/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0/webrick/httpserver.rb:140:in `service'
+/Users/ivan/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0/webrick/httpserver.rb:96:in `run'
+/Users/ivan/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/favicon.ico" for ::1 at 2020-08-12 17:38:54 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+rack (2.2.3) lib/rack/handler/webrick.rb:95:in `service'
+/Users/ivan/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0/webrick/httpserver.rb:140:in `service'
+/Users/ivan/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0/webrick/httpserver.rb:96:in `run'
+/Users/ivan/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/" for ::1 at 2020-08-12 17:38:56 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ivan/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ivan/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.3ms | Allocations: 7)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 243)
+
+
+Started GET "/projects" for ::1 at 2020-08-12 17:38:57 +0300
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (1.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 10]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 11]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 12]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 13]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 14]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 15]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 16]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (29.35ms)
+Completed 200 OK in 34ms (Views: 29.8ms | ActiveRecord: 4.0ms | Allocations: 13561)
+
+
+Started GET "/projects/10/todos/1" for ::1 at 2020-08-12 17:39:03 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/projects/10/todos/1"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+rack (2.2.3) lib/rack/handler/webrick.rb:95:in `service'
+/Users/ivan/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0/webrick/httpserver.rb:140:in `service'
+/Users/ivan/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0/webrick/httpserver.rb:96:in `run'
+/Users/ivan/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/projects" for ::1 at 2020-08-12 17:39:58 +0300
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 10]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 11]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 12]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 13]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 14]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 15]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 16]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (21.12ms)
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 2.2ms | Allocations: 13381)
+
+
+Started GET "/" for ::1 at 2020-08-13 14:08:50 +0300
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ivan/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ivan/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.1ms | Allocations: 295)
+Completed 200 OK in 13ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 1537)
+
+
+Started GET "/" for ::1 at 2020-08-13 14:08:52 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ivan/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ivan/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.3ms | Allocations: 179)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 715)
+
+
+Started GET "/projects" for ::1 at 2020-08-13 14:08:53 +0300
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.9ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 10]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 11]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 12]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 13]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 14]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 15]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 16]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (42.31ms)
+Completed 200 OK in 76ms (Views: 51.2ms | ActiveRecord: 20.2ms | Allocations: 25428)
+
+
+Started GET "/projects" for ::1 at 2020-08-13 14:09:23 +0300
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 10]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 11]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 12]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 13]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 14]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 15]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 16]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (16.82ms)
+Completed 200 OK in 19ms (Views: 17.1ms | ActiveRecord: 1.8ms | Allocations: 13382)
+
+
+Started GET "/projects" for ::1 at 2020-08-13 14:30:17 +0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (1.0ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 10]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 11]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 12]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 13]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 14]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 15]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 16]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (35.67ms)
+Completed 200 OK in 62ms (Views: 46.8ms | ActiveRecord: 7.8ms | Allocations: 25441)
+
+
+Started GET "/projects" for ::1 at 2020-08-13 14:30:31 +0300
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 10]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 11]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 12]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 13]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 14]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 15]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 16]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (17.56ms)
+Completed 200 OK in 20ms (Views: 17.9ms | ActiveRecord: 2.0ms | Allocations: 13377)
+
+
+Started GET "/projects" for ::1 at 2020-08-13 14:31:06 +0300
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 10]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 11]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 12]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 13]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 14]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 15]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 16]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (21.2ms)
+Completed 200 OK in 24ms (Views: 21.7ms | ActiveRecord: 2.2ms | Allocations: 13397)
+
+
+Started GET "/projects" for ::1 at 2020-08-13 14:31:34 +0300
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 10]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 11]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 12]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 13]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 14]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 15]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 16]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (21.14ms)
+Completed 200 OK in 24ms (Views: 21.8ms | ActiveRecord: 1.8ms | Allocations: 13379)
+
+
+Started GET "/projects" for ::1 at 2020-08-13 14:32:20 +0300
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 10]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 11]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 12]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 13]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 14]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 15]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers]   [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."project_id" = $1[0m  [["project_id", 16]]
+[active_model_serializers]   ↳ app/controllers/projects_controller.rb:3:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (18.91ms)
+Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 2.0ms | Allocations: 13397)
+
+

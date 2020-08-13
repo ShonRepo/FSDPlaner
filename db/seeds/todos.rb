@@ -1,3 +1,6 @@
-@Project = Project.where("title = 'test1'").first
-@Project.todos.create(text:'test',isCompleted: true)
-@Project.todos.create(text:'test2',isCompleted: false)
+@Project = Project.where("title = 'testing task'").first
+@Project.todos.create(text:'Инициализация API',isCompleted: true)
+@Project.todos.create(text:'API для списка задач',isCompleted: true)
+@Project.todos.create(text:'фронтенд приложения',isCompleted: true)
+@Project.todos.create(text:'фронтенд для списка задач',isCompleted: true)
+@Project.todos.create(text:'Собеседование',isCompleted: false)

@@ -1,25 +1,21 @@
 class TodosController < ApplicationController
 
   def update
-    render json: Todo.update(params[:id], isCompleted: params[:isCompleted])
+    Todo.update(params[:id], isCompleted: params[:isCompleted])
   end
 
   def create
-    prod = { project: {title: params[:title],
-                      todos_attributes: [ {text: params[:text], isCompleted: false} ] } }
     if params[:project_id]
-      Project.update(params[:project_id], prod[:project])
+      Project.update(params[:project_id],project_params)
     else
-      Project.create!(prod[:project])
+      Project.create(project_params)
     end
-
   end
   private
-
   def todo_params
     params.permit(:text, :isCompleted)
   end
   def project_params
-    params.permit(project: {:title, todos_attributes: [{:text, :isCompleted}]})
+    params.permit(:title, todos_attributes: [:text, :isCompleted])
   end
 end

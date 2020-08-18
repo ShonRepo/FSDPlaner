@@ -12,9 +12,6 @@ class TodosController < ApplicationController
     end
   end
   private
-  def todo_params
-    params.permit(:text, :isCompleted)
-  end
   def project_params
     params.permit(:title, todos_attributes: [:text, :isCompleted])
   end
